@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="javascript" href="design.js">
+</head>
+<body>
+
+    <h1>COLOR CHANGE DESIGN</h1>
+    div class="container">
+    <button onclick="setColor('red')">Red</button>
+    <button onclick="setColor('green')">Green</button>
+    <button onclick="setColor('blue')">Blue</button>
+    <button onclick="randomColor()">Random</button>
+</div>
+
+<script>
+    function setColor(color) {
+        document.body.style.backgroundColor = color;
+    }
+
+    function randomColor() {
+        let colors = ["red", "green", "blue"];
+        let randomIndex = Math.floor(Math.random() * colors.length);
+        document.body.style.backgroundColor = colors[randomIndex];
+    }
+</script>
+    
+</body>
+</html>
